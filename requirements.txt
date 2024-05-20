@@ -1,0 +1,10 @@
+Flask
+Flask-RESTful
+Jinja2
+Werkzeug
+click
+pillow
+pip
+pytz
+six
+reportbro-lib
