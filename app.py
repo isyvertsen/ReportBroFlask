@@ -14,6 +14,10 @@ REPORTS_DIR = './reports/'
 def home():
     return render_template("index.html")
 
+@app.route("/designer")
+def designer():
+    return render_template("designer.html")
+
 @app.route('/report/run', methods=['POST', 'PUT'])
 def get_create_report():
     # The data for the report is obtained from the POST request's JSON

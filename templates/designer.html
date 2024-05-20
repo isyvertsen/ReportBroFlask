@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>ReportBro-Designer Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='reportbro.css') }}">
+<script src="{{ url_for('static', filename='reportbro.min.js') }}"></script>
+
+</head>
+<body>
+    <div id="reportbro"></div>
+
+
+        <script type="text/javascript">
+
+            const rb = new ReportBro(document.getElementById('reportbro'), {
+    //remove reportServerUrl if you want to use the default report server for a quick start
+    reportServerUrl: 'http://192.168.86.3:5012/report/run',
+    menuShowButtonLabels: true
+});
+    </script>
+</body>
+</html>
